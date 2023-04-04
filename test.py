@@ -129,7 +129,7 @@ def test_emotic(result_path, model_path, ind2cat, ind2vad, context_norm, body_no
     :param body_norm: List containing mean and std values for body images. 
     :param args: Runtime arguments.
     '''    
-    # Prepare models 
+    # Preparing models 
     model_context = torch.load(os.path.join(model_path,'model_context1.pth'))
     model_body = torch.load(os.path.join(model_path,'model_body1.pth'))
     emotic_model = torch.load(os.path.join(model_path,'model_emotic1.pth'))
